@@ -1,0 +1,12 @@
+dotnet tool uninstall --global dotnet-aspnet-codegenerator
+dotnet tool install --global dotnet-aspnet-codegenerator --version 6.0.11
+dotnet tool uninstall --global dotnet-ef --version 6.0.11
+dotnet tool install --global dotnet-ef --version 6.0.11
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.11
+dotnet add package Microsoft.EntityFrameworkCore.SQLite --version 6.0.11
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6.0.11
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 6.0.11
+
+
+### To run before migration 
+dotnet add package Microsoft.EntityFrameworkCore.Tools.DotNet --version 2.0.3
